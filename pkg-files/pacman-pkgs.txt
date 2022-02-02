@@ -1,0 +1,18 @@
+awesome-terminal-fonts
+powerline-fonts
+noto-fonts-emoji
+ttf-droid
+terminus-font
+ttf-hack
+ttf-roboto
+code
+sublime-text
+vim
+nano
+wget
+unzip
+jdk-openjdk
+nodejs npm
+yarn
+python-pip
+alacritty

@@ -1,0 +1,6 @@
+zoom
+brave-bin
+google-chrome
+ttf-cascadia-code
+ulauncher
+termite

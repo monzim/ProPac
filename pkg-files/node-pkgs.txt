@@ -1,0 +1,3 @@
+@angular/cli
+expo-cli
+firebase-tools
