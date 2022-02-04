@@ -8,12 +8,15 @@ echo "╩  ┴└─└─┘╩  ┴ ┴└─┘";
 addAUR () {
     echo " >> Installing $1"
     cd ~
+    cd Downloads/
+    mkdir AurPackage
+    cd AurPackage/
     git clone "https://aur.archlinux.org/$1.git"
-    cd ~/$1
+    cd `pwd`/$1
     makepkg -si --noconfirm
     echo " >> $1 Installed"
     echo ""
-    cd ~
+    cd ..
 }
 
 addNodePackage () {

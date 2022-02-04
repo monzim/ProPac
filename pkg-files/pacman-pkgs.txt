@@ -5,7 +5,6 @@ ttf-droid
 terminus-font
 ttf-hack
 ttf-roboto
-code
 sublime-text
 vim
 nano

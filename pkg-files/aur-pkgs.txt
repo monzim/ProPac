@@ -1,6 +1,8 @@
-zoom
+xorg-font-utils
+visual-studio-code-bin
+termite
 brave-bin
 google-chrome
 ttf-cascadia-code
 ulauncher
-termite
+zoom
