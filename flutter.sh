@@ -4,6 +4,7 @@ echo -ne "
 Installing Flutter from official repository...
 "
 echo ""
+sudo chown -R $USER /var/lib
 cd /var/lib
 echo " > Cloning Flutter SDK"
 echo ""
