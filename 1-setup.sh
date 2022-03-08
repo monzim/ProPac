@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 logo(){
-echo "╔═╗┬─┐┌─┐╔═╗┌─┐┌─┐";
-echo "╠═╝├┬┘│ │╠═╝├─┤│  ";
-echo "╩  ┴└─└─┘╩  ┴ ┴└─┘";
-
+echo "╔╗ ╔═╗╔═╗╦ ╦╔╦╗";
+echo "╠╩╗╚═╗╠═╝║║║║║║";
+echo "╚═╝╚═╝╩  ╚╩╝╩ ╩";
+echo "    ProPac     ";
+echo "Script by: @monzim"
 }
+
 addAUR () {
     echo " >> Installing $1"
     cd ~
@@ -19,13 +21,20 @@ addAUR () {
     cd ..
 }
 
-addNodePackage () {
-  cd ~
-  echo " >> Installing $1"
-  npm install -g $1
-  echo " >> $1 Installed"
-  echo ""
+bspwmConfig(){
+    cd ~
+    mkdir .config
+    git clone -b test https://github.com/Monzim/dotfiles
+    cd dotfiles
+    stow bspwm
+    stow sxhkd
+    stow zsh
+    stow kitty
+    stow polybar
+    stow zsh
+    cd ~
 }
+
 
 echo -ne "
 -------------------------------------------------------------------------
@@ -51,21 +60,10 @@ do
    addAUR $i
 done
 
-
 echo -ne "
 -------------------------------------------------------------------------
-                    Installing node Packages  
+Configuring BSPWM
 -------------------------------------------------------------------------
 "
-
-for i in $(cat `pwd`/pkg-files/node-pkgs.txt)
-do
-   addNodePackage $i
-    echo "F"
-done
-echo -ne "
--------------------------------------------------------------------------
-                    Flutter  
--------------------------------------------------------------------------
-"
-`pwd`/flutter.sh
+bspwmConfig
+sudo systemctl enable lightdm.service

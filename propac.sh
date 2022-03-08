@@ -1,17 +1,18 @@
 #!/bin/bash
 
 logo(){
-echo "╔═╗┬─┐┌─┐╔═╗┌─┐┌─┐";
-echo "╠═╝├┬┘│ │╠═╝├─┤│  ";
-echo "╩  ┴└─└─┘╩  ┴ ┴└─┘";
-
+echo "╔╗ ╔═╗╔═╗╦ ╦╔╦╗";
+echo "╠╩╗╚═╗╠═╝║║║║║║";
+echo "╚═╝╚═╝╩  ╚╩╝╩ ╩";
+echo "    ProPac     ";
+echo "Script by: @monzim"
 }
 
 echo -ne "
 `logo`
-Essential Software Installer for Programing
+ARCHLINUX WINDOW MANAGER:
 Script by: @monzim 
->> This script will install all the essential software for you.
+>> This script will install BSWPM adn some essential software for you.
 
 "
 

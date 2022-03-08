@@ -1,8 +1,5 @@
-xorg-font-utils
-visual-studio-code-bin
-termite
-brave-bin
 google-chrome
+colorpicker
+networkmanager-dmenu-git
+polybar
 ttf-cascadia-code
-ulauncher
-zoom

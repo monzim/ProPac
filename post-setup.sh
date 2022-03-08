@@ -1,20 +1,11 @@
 #!/usr/bin/env bash
-
 logo(){
-echo ""
-echo " ██▓███   ██▀███   ▒█████   ██▓███   ▄▄▄       ▄████▄  ";
-echo "▓██░  ██▒▓██ ▒ ██▒▒██▒  ██▒▓██░  ██▒▒████▄    ▒██▀ ▀█  ";
-echo "▓██░ ██▓▒▓██ ░▄█ ▒▒██░  ██▒▓██░ ██▓▒▒██  ▀█▄  ▒▓█    ▄ ";
-echo "▒██▄█▓▒ ▒▒██▀▀█▄  ▒██   ██░▒██▄█▓▒ ▒░██▄▄▄▄██ ▒▓▓▄ ▄██▒";
-echo "▒██▒ ░  ░░██▓ ▒██▒░ ████▓▒░▒██▒ ░  ░ ▓█   ▓██▒▒ ▓███▀ ░";
-echo "▒▓▒░ ░  ░░ ▒▓ ░▒▓░░ ▒░▒░▒░ ▒▓▒░ ░  ░ ▒▒   ▓▒█░░ ░▒ ▒  ░";
-echo "░▒ ░       ░▒ ░ ▒░  ░ ▒ ▒░ ░▒ ░       ▒   ▒▒ ░  ░  ▒   ";
-echo "░░         ░░   ░ ░ ░ ░ ▒  ░░         ░   ▒   ░        ";
-echo "            ░         ░ ░                 ░  ░░ ░      ";
-echo "                                              ░        ";
+echo "╔╗ ╔═╗╔═╗╦ ╦╔╦╗";
+echo "╠╩╗╚═╗╠═╝║║║║║║";
+echo "╚═╝╚═╝╩  ╚╩╝╩ ╩";
+echo "    ProPac     ";
 echo "Script by: @monzim"
 }
-
 
 logo
 echo ""
@@ -29,11 +20,5 @@ for i in $(cat `pwd`/pkg-files/aur-pkgs.txt)
 do
    echo "     $i"
 done
-
-for i in $(cat `pwd`/pkg-files/node-pkgs.txt)
-do
-   echo "     $i"
-done
-echo "     Flutter"
-
+echo "Please REBOOT your system"
 exit
